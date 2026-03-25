@@ -1,12 +1,12 @@
 <h1 align="center">Hi there, I'm Blessing Fabian 👋</h1>
 
 <p align="center">
-  <em>Open to collaborations | Actively looking for DevOps and Cloud Junior roles | Open to share my story to motivate others 💡</em>
+  <em>Open to collaborations | Actively looking for DevOps Engineering roles | 2+ years experience in helping fintechs deliver fast, secure, and compliant systems using CI/CD, cloud, and infrastructure automation 💡</em>
 </p>
 
 ### 👩🏾‍💻 About Me</p> <p> <img src="https://komarev.com/ghpvc/?username=emezu&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/> </p>
 
-I'm a DevOps learner who enjoys working with cloud tools, automation, and anything that makes deployment smoother. I like learning by doing and sharing my journey along the way. I'm open to junior DevOps or cloud roles where I can add value, keep growing, and work with great people.
+I enjoy solving complex infrastructure challenges, optimizing systems for performance and cost, and collaborating with cross-functional teams to drive seamless delivery processes. I’m particularly interested in cloud-native technologies, DevOps best practices, and building resilient systems that can scale effectively.
 
 ---
 
@@ -15,7 +15,6 @@ I'm a DevOps learner who enjoys working with cloud tools, automation, and anythi
 - Deploying containerized apps using Docker & Kubernetes
 - Setting up CI/CD pipelines with GitHub Actions
 - Exploring monitoring and logging tools
-- Practicing AWS best practices
 
 ---
 
@@ -81,19 +80,9 @@ Scripting:       Bash scripting
 - ✅ Completed DevOps: Docker, Kubernetes, Terraform and Azure DevOps on Udemy
 
 
-### 🌱 Goals for 2025
-
-- Automate end-to-end CI/CD pipelines confidently
-- Contribute to open-source DevOps projects
-- Get a DevOps Internship or Junior DevOps role
-- Share my tech story to motivate others
-
-
 ### 💬 Let's Connect
 
 - LinkedIn: https://www.linkedin.com/in/blessingfabian/
-- Twitter: https://x.com/faby_tech_sis
-
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=emezu&show_icons=true&hide_title=true" alt="GitHub stats" width="360"/>
