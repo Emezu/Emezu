@@ -42,7 +42,6 @@ I enjoy solving complex infrastructure challenges, optimizing systems for perfor
 - Kubernetes advanced concepts
 - AWS networking (VPC, Load Balancers, Auto Scaling)
 - Security best practices in DevOps
-- How to contribute to open source
 - Public Speaking
 
 ---
