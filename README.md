@@ -10,24 +10,15 @@ I enjoy solving complex infrastructure challenges, optimizing systems for perfor
 
 ---
 
-### 🔧 What I'm Currently Building
-
-- Deploying containerized apps using Docker & Kubernetes
-- Setting up CI/CD pipelines with GitHub Actions
-- Exploring monitoring and logging tools
-
----
-
 ### 🚀 Projects
+- **Event-driven Image processing pipeline** - Provisioned SQS, ECS FARGATE, ECR, ASG, with Terraform
+   🔗 https://github.com/Emezu/img-pro-python.git
 
 - **Dockerized Node Application / CI/CD Pipeline** – Deployed a simple Node.js app to AWS EC2 using Docker and GitHub Actions.  
   🔗 https://github.com/Emezu/Docker-SERVICE
 
 - **AWS Terraform Infrastructure** – Provisioned VPC, EC2, and Auto Scaling Group using Infrastructure-as-Code with Terraform.  
   🔗 https://github.com/Emezu/IAC-BEST-PRACTICE-PROJECT
-
-- **Deployment strategies** – Practice repo for Kubernetes deployment strategies.  
-  🔗 https://github.com/Emezu/Kubenet_class
 
 - **Secure Kubernetes Deployment CI/CD Pipeline** – Built a multi-step pipeline for deploying secure Kubernetes workloads with automated provisioning and secrets management.
 
