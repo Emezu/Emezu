@@ -57,9 +57,7 @@ End-to-end DevOps ownership of a Spring Boot microservice's containerization and
 
 ### 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Emezu&show_icons=true&theme=default&count_private=true" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Emezu&layout=compact" height="165">
-</p>
+  <img src="https://github-readme-stats.vercel.app/api?username=emezu&show_icons=true&hide_title=true" alt="GitHub stats" width="360"/>
 
 ### 🌱 Currently Learning / Exploring
 - Monitoring & observability (Prometheus, Grafana)
@@ -67,4 +65,4 @@ End-to-end DevOps ownership of a Spring Boot microservice's containerization and
 - AWS certification (Solutions Architect / SysOps Associate)
 
 ### 🤝 Let's Connect
-Open to junior DevOps/Cloud roles and collaboration. Reach me via [LinkedIn](https://www.linkedin.com/in/blessingfabian) or [email](mailto:emezufabian@gmail.com).
+Open to junior DevOps/Cloud roles and collaboration. Reach me via [LinkedIn](https://www.linkedin.com/in/blessingfabian)
