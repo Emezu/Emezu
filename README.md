@@ -1,44 +1,59 @@
-<h1 align="center">Hi, I'm Blessing Fabian 👋</h1>
-<h3 align="center">Junior DevOps / Cloud Engineer | Docker · Kubernetes · Terraform · AWS · CI/CD</h3>
+<h1 align="center">Blessing Fabian (Faby)</h1>
+<h3 align="center">DevOps Engineer | Cloud Infrastructure, CI/CD, Containerization</h3>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/blessingfabian/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white"></a>
+Lagos, Nigeria 🇳🇬 &nbsp;|&nbsp; emezufabian@gmail.com &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/blessingfabian/">LinkedIn</a>
 </p>
 
 ---
 
-### 🎯 What I do
-I build and automate cloud infrastructure, I write CI/CD pipelines, contenarize microservices and manage applications to ensure scalability and availability. I'm currently looking for a **Junior DevOps / Cloud Engineer** role where I can own real infrastructure and keep growing.
+I build and operate CI/CD pipelines, containerized workloads, and cloud infrastructure for fintech products — currently provisioning and securing the cloud environment for a pre-launch fintech startup from the ground up. I like taking a system from "works on my machine" to "runs reliably in production, with monitoring that tells you before something breaks."
 
-### 🧰 Core Stack
-| Category | Tools |
-|---|---|
-| **Cloud** | AWS (EC2, S3, VPC, IAM, Auto Scaling, ECS, SQS) | Hetzner | GCP | Microsoft Azure
-| **IaC** | Terraform |
-| **Containers** | Docker, Docker compose | Kubernetes |
-| **CI/CD** | GitHub Actions, Jenkins |
-| **Scripting/OS** | Bash, YAML, Linux (Ubuntu) |
-| **Version Control** | Git |
+### Currently
+**Jnr DevOps Engineer @ KoloPay** (June 2026–Present)
+Provisioning isolated, secure Hetzner Cloud environments with Terraform, containerizing core microservices with Docker/Docker Compose and deploying to Kubernetes, and running Prometheus + Grafana for launch-readiness monitoring. Built GitHub Actions pipelines that cut manual deployment/testing cycles by 70%, and configured Cloudflare DNS routing to isolated services including auth and wallet modules.
 
-### 💼 Professional Case Study — KoloPay (Fintech, Private Repo)
+---
 
-End-to-end DevOps ownership of a Spring Boot microservice for a live fintech product, in a multi-module Java monorepo.
+## Featured Projects
 
-📄 **[Read the full case study →](./KOLOPAY_CASESTUDY.md)**
+| Project | What it is | Stack | Proof |
+|---|---|---|---|
+| **AWS Event-Driven Image Pipeline** | Upload-triggered image processing pipeline: S3 → SQS → containerized workers, fully provisioned via IaC | AWS S3, SQS, ECS Fargate, Terraform | 🔗 [Repo](https://github.com/Emezu/img-pro-python) |
+| **Infrastructure Automation with Terraform** | Modular IaC provisioning VPC, EC2, and security groups on AWS with reusable, version-controlled modules | Terraform, AWS | 🔗 [Repo](https://github.com/Emezu/IAC-BEST-PRACTICE-PROJECT) |
+| **Booksiread** | CI/CD pipeline automating Docker image builds/versioning, publishing to Docker Hub, and deploying a multi-tier app (with MongoDB + Mongo Express) to Amazon EKS via Helm, with branch-based test/canary environments | Docker, GitHub Actions, Helm, Amazon EKS, MongoDB | 🔗 [Repo](https://github.com/Emezu/booksiread.git) |
+| **KoloPay Cloud Infrastructure — Case Study** | Provisioned and secured a pre-launch fintech's cloud environment from scratch: isolated Hetzner environments, containerized microservices, Kubernetes deployment, monitoring, and Cloudflare-routed auth/wallet services | Terraform, Docker, Kubernetes, Hetzner Cloud, Prometheus, Grafana, Cloudflare, GitHub Actions | 📄**[Read the full case study →](./KOLOPAY_CASESTUDY.md)** |
 
-### 📌 Featured Projects
-- **[Docker-SERVICE](https://github.com/Emezu/Docker-SERVICE)** — Containerized a Node.js app and shipped it to AWS EC2 via a GitHub Actions CI/CD pipeline.
-- **[IAC-BEST-PRACTICE-PROJECT](https://github.com/Emezu/IAC-BEST-PRACTICE-PROJECT)** — Provisioned a VPC, EC2 fleet, and Auto Scaling Group using Terraform, following IaC best practices (modules, remote state, variables).
-- **Secure Kubernetes CI/CD Pipeline** — Multi-stage pipeline for deploying K8s workloads with automated provisioning and secrets management.
-- **[Kubenet_class](https://github.com/Emezu/Kubenet_class)** — Hands-on repo practicing Kubernetes deployment strategies (rolling updates, blue/green).
-- **Linux Server Monitoring Script** — Bash tooling that reports on server performance/health.
-- **Log Archiving Automation Tool** — Scheduled Bash script for compressing, archiving, and rotating logs.
+---
 
+## Tech Stack
 
-### 🌱 Currently Learning / Exploring
-- Monitoring & observability (Prometheus, Grafana)
-- Advanced Kubernetes (Helm, service mesh)
-- AWS certification (Solutions Architect / SysOps Associate)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
+![GitHubActions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
+![SpringBoot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 
-### 🤝 Let's Connect
-Open to junior DevOps/Cloud roles and collaboration. Reach me via [LinkedIn](https://www.linkedin.com/in/blessingfabian)
+---
+
+## Currently Deepening
+- GCP certifications and multi-cloud IaC patterns
+- AWS Certified Solutions Architect – Associate (target)
+- Advanced Kubernetes (multi-cluster, security hardening)
+
+---
+
+## Let's Connect
+📧 emezufabian@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](#) &nbsp;|&nbsp; Open to DevOps / Cloud Engineering roles and collaborations
