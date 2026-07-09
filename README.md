@@ -20,28 +20,11 @@ I build and automate cloud infrastructure, I write CI/CD pipelines, contenarize 
 | **Scripting/OS** | Bash, YAML, Linux (Ubuntu) |
 | **Version Control** | Git |
 
-
 ### 💼 Professional Case Study — KoloPay (Fintech, Private Repo)
-End-to-end DevOps ownership of a Spring Boot microservice's containerization and deployment for a live fintech product, in a multi-module Java monorepo.
 
-**Containerization**
-- Dockerized `kolo-auth-service` (Java 21 / Spring Boot) inside a multi-module Maven monorepo with no root aggregator POM, a non-trivial build-context problem.
-- Wrote a multi-stage Dockerfile: build stage compiles shared libraries and the service's module chain in correct dependency order; runtime stage ships only the final JAR on a minimal, non-root JRE image.
-- Diagnosed and fixed a real dependency-resolution failure caused by missing shared-library modules in the Docker build context.
+End-to-end DevOps ownership of a Spring Boot microservice for a live fintech product, in a multi-module Java monorepo.
 
-**Local Dev Environment**
-- Built `docker-compose.yml` running the service + PostgreSQL with correct networking and env-var wiring (DB, JWT config).
-- Established a `.env` / `.env.example` convention with proper `.gitignore` coverage to keep secrets out of version control.
-
-**Cloud Deployment (Hetzner)**
-- Manually provisioned and hardened a Hetzner Cloud VM (Ubuntu 24.04): non-root deploy user, SSH key auth, `ufw` firewall, `fail2ban`.
-- Evaluated a reverse-proxy (Caddy) setup, then simplified to direct port exposure per team decision (no registered domain yet, so TLS wasn't viable).
-- Debugged and resolved a live deployment blocker caused by a mismatch between the cloud provider's firewall rules and the OS-level firewall rules — despite correct `ufw` config, external traffic was still blocked at the cloud layer.
-- Deployed and verified the service healthy in production via its health-check endpoint and live endpoint testing.
-
-**CI/CD**
-- Built a GitHub Actions workflow that auto-deploys the service to the Hetzner server on pushes to `dev`, scoped with path filters so it only triggers on relevant module/config changes.
-- Currently debugging an SSH timeout between the GitHub-hosted runner and the server, isolated to a firewall-level rule rather than the app.
+📄 **[Read the full case study →](./KOLOPAY_CASESTUDY.md)**
 
 ### 📌 Featured Projects
 - **[Docker-SERVICE](https://github.com/Emezu/Docker-SERVICE)** — Containerized a Node.js app and shipped it to AWS EC2 via a GitHub Actions CI/CD pipeline.
@@ -51,9 +34,6 @@ End-to-end DevOps ownership of a Spring Boot microservice's containerization and
 - **Linux Server Monitoring Script** — Bash tooling that reports on server performance/health.
 - **Log Archiving Automation Tool** — Scheduled Bash script for compressing, archiving, and rotating logs.
 
-### 📈 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=emezu&show_icons=true&hide_title=true" alt="GitHub stats" width="360"/>
 
 ### 🌱 Currently Learning / Exploring
 - Monitoring & observability (Prometheus, Grafana)
