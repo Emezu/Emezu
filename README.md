@@ -55,20 +55,14 @@ I enjoy solving complex infrastructure challenges, optimizing systems for perfor
 ```bash
 Languages:       Bash, YAML
 Tools/OS:        Linux (Ubuntu), Git
-Containers:      Docker, Kubernetes (learning)
+Containers:      Docker, Kubernetes 
 IaC:             Terraform
 CI/CD:           GitHub Actions, Jenkins
 Cloud Platforms: AWS (EC2, S3, VPC, IAM, Auto Scaling)
-Monitoring:      Prometheus, Grafana (learning)
+Monitoring:      Prometheus, Grafana 
 Scripting:       Bash scripting
 
 ```
-
-### 📚 Certifications / Trainings
-
-- ✅ Attended Cyclobold DevOps Training
-- ✅ Completed DevOps: Docker, Kubernetes, Terraform and Azure DevOps on Udemy
-
 
 ### 💬 Let's Connect
 
@@ -84,7 +78,4 @@ Scripting:       Bash scripting
 
 I enjoy teaching kids about STEM and I really love playing volleyball (Libero). If I'm not troubleshooting a server, I'm probably motivating someone to start their tech journey.
  
-
-
- > _"I'm not rushing, but I'm not playing either, I'm building."_
 
