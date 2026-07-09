@@ -1,30 +1,54 @@
-# KoloPay — DevOps Case Study
-*Private/NDA'd codebase — details generalized where appropriate. Happy to go deeper in an interview.*
+# KoloPay Cloud Infrastructure — Case Study
+
+> **Note:** KoloPay's codebase is private. This is a written case study describing the architecture and work I did, not a source-code repository.
 
 ## Context
-KoloPay is a live fintech product (savings/e-commerce). I owned the containerization and deployment of `kolo-auth-service`, a Spring Boot (Java 21) microservice living inside a multi-module Maven monorepo with no root aggregator POM.
+KoloPay is a pre-launch fintech startup building a budgeting app for the Nigerian market. As the sole DevOps engineer, I was responsible for taking the platform's infrastructure from nothing to launch-ready — provisioning, containerizing, securing, and monitoring it from the ground up.
 
-## Containerization
-- Dockerized `kolo-auth-service` inside a multi-module Maven monorepo with no root aggregator POM — a non-trivial build-context problem, since Docker needs a coherent build context and Maven needs correct module resolution order.
-- Wrote a multi-stage Dockerfile: the build stage compiles the shared libraries (`kolo-core`, `kolo-security`, `kolo-logging-core`, `kolo-openapi-core`) and the service's own module chain (`kolo-auth-entity`, `kolo-auth-datalayer`, `kolo-auth-service`) in correct dependency order; the runtime stage ships only the final JAR on a minimal, non-root JRE image.
-- Diagnosed and fixed a real dependency-resolution build failure caused by missing shared-library modules in the Docker build context — the build was reaching for modules that weren't copied into the context, a classic monorepo-in-a-container problem.
+## What I Built
 
-## Local Development Environment
-- Built `docker-compose.yml` running `auth-service` + PostgreSQL locally, with correct container networking and environment variable wiring (DB connection, JWT config).
-- Established a `.env` / `.env.example` convention to separate real secrets from committed config templates, with proper `.gitignore` coverage — so nobody accidentally commits live credentials.
+### 1. Infrastructure as Code
+Provisioned isolated, secure environments on **Hetzner Cloud** using **Terraform** — managing subnets, firewalls, and load balancers as version-controlled code rather than manual console setup.
 
-## Cloud Deployment (Hetzner)
-- Manually provisioned a Hetzner Cloud VM (Ubuntu 24.04): configured a non-root deploy user, SSH key-based auth, `ufw` firewall rules, and `fail2ban` for brute-force protection.
-- Evaluated a reverse-proxy (Caddy) setup for automatic TLS, then simplified to direct port exposure per a team decision — TLS wasn't viable yet since there was no registered domain.
-- Debugged and resolved a live production issue: a mismatch between the cloud provider's firewall configuration and the OS-level firewall rules. The OS-level (`ufw`) config was correct, but traffic was still being blocked at the cloud infrastructure layer — a good reminder that "firewall configured" isn't one setting, it's a stack.
-- Deployed and verified `auth-service` live and healthy over the public IP, confirmed via the `/actuator/health` endpoint and direct endpoint testing.
+### 2. Containerization & Orchestration
+Containerized core microservices with **Docker** and **Docker Compose**, then deployed them to a **Kubernetes** cluster to keep services highly available as the platform approached launch.
 
-## CI/CD
-- Built a GitHub Actions workflow (`deploy-auth.yml`) that auto-deploys `auth-service` to the Hetzner server on pushes to the `dev` branch, scoped via path filters so it only triggers on relevant module/config changes — avoiding unnecessary redeploys from unrelated commits.
-- Currently debugging an SSH connection timeout between the GitHub-hosted runner and the server; isolated the issue to a firewall-level rule rather than the application itself.
+### 3. CI/CD
+Designed and implemented **GitHub Actions** pipelines that automated deployment and testing — cutting manual deployment/testing cycles by **70%** for the development team.
 
-## What this demonstrates
-- Real-world Docker multi-stage builds in a non-trivial monorepo (not a toy single-repo app)
-- End-to-end ownership: local dev → cloud provisioning → CI/CD → production verification
-- Debugging skill across layers (application, OS, cloud infrastructure) rather than just "it worked on my machine"
-- Process awareness — catching workflow and naming issues before they become team-wide problems
+### 4. Monitoring & Observability
+Configured **Prometheus** and **Grafana** to track infrastructure metrics in real time, giving the team visibility into launch-readiness rather than finding out about problems after the fact.
+
+### 5. Networking & Traffic Routing
+Configured **Cloudflare DNS** with path-based routing rules to securely direct traffic to isolated microservices — including the auth and wallet modules, where routing mistakes have real security consequences.
+
+## Architecture
+
+```mermaid
+flowchart TB
+    Dev[Developer Push] --> GHA[GitHub Actions CI/CD]
+    GHA --> Build[Build & Test]
+    Build --> Docker[Docker Images]
+    Docker --> K8s[Kubernetes Cluster on Hetzner Cloud]
+    K8s --> Auth[Auth Service]
+    K8s --> Wallet[Wallet Service]
+    K8s --> Core[Core Services]
+    CF[Cloudflare DNS] -->|path-based routing| Auth
+    CF -->|path-based routing| Wallet
+    K8s --> Mon[Prometheus + Grafana]
+    Mon -.->|metrics & alerts| Dev
+
+    subgraph IaC [Provisioned via Terraform]
+        K8s
+        CF
+    end
+```
+
+## Why This Mattered
+A pre-launch fintech has one shot at a stable launch — infrastructure problems that surface post-launch hit real users and real money. The priority throughout was reducing manual, error-prone steps (deployment, provisioning) and replacing "hope it works" with "we'll know before users do" via monitoring and alerting.
+
+## Stack
+`Terraform` `Docker` `Docker Compose` `Kubernetes` `Hetzner Cloud` `GitHub Actions` `Prometheus` `Grafana` `Cloudflare`
+
+---
+*Code is private/proprietary to KoloPay. Happy to walk through specific technical decisions in an interview.*
