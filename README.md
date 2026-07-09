@@ -22,7 +22,7 @@ Provisioning isolated, secure Hetzner Cloud environments with Terraform, contain
 | **AWS Event-Driven Image Pipeline** | Upload-triggered image processing pipeline: S3 → SQS → containerized workers, fully provisioned via IaC | AWS S3, SQS, ECS Fargate, Terraform | 🔗 [Repo](https://github.com/Emezu/img-pro-python) |
 | **Infrastructure Automation with Terraform** | Modular IaC provisioning VPC, EC2, and security groups on AWS with reusable, version-controlled modules | Terraform, AWS | 🔗 [Repo](https://github.com/Emezu/IAC-BEST-PRACTICE-PROJECT) |
 | **Booksiread** | CI/CD pipeline automating Docker image builds/versioning, publishing to Docker Hub, and deploying a multi-tier app (with MongoDB + Mongo Express) to Amazon EKS via Helm, with branch-based test/canary environments | Docker, GitHub Actions, Helm, Amazon EKS, MongoDB | 🔗 [Repo](https://github.com/Emezu/booksiread.git) |
-| **KoloPay Cloud Infrastructure — Case Study** | Provisioned and secured a pre-launch fintech's cloud environment from scratch: isolated Hetzner environments, containerized microservices, Kubernetes deployment, monitoring, and Cloudflare-routed auth/wallet services | Terraform, Docker, Kubernetes, Hetzner Cloud, Prometheus, Grafana, Cloudflare, GitHub Actions | 📄**[Read the full case study →](./KOLOPAY_CASESTUDY.md)** |
+| **KoloPay Cloud Infrastructure — Case Study** | Provisioned and secured a pre-launch fintech's cloud environment from scratch: isolated Hetzner environments, containerized microservices, Kubernetes deployment, monitoring, and Cloudflare-routed auth/wallet services | Terraform, Docker, Kubernetes, Hetzner Cloud, Prometheus, Grafana, Cloudflare, GitHub Actions | 📄[Read the full case study →](./KOLOPAY_CASESTUDY.md) |
 
 ---
 
