@@ -43,10 +43,6 @@ End-to-end DevOps ownership of a Spring Boot microservice's containerization and
 - Built a GitHub Actions workflow that auto-deploys the service to the Hetzner server on pushes to `dev`, scoped with path filters so it only triggers on relevant module/config changes.
 - Currently debugging an SSH timeout between the GitHub-hosted runner and the server, isolated to a firewall-level rule rather than the app.
 
-**Process & Collaboration**
-- Flagged a branch-strategy gap (`infra` vs `main` vs `dev`) and helped clarify the intended promotion flow.
-- Documented the full build-and-deploy process so the same containerization pattern can be repeated across four upcoming services in the same monorepo.
-
 ### 📌 Featured Projects
 - **[Docker-SERVICE](https://github.com/Emezu/Docker-SERVICE)** — Containerized a Node.js app and shipped it to AWS EC2 via a GitHub Actions CI/CD pipeline.
 - **[IAC-BEST-PRACTICE-PROJECT](https://github.com/Emezu/IAC-BEST-PRACTICE-PROJECT)** — Provisioned a VPC, EC2 fleet, and Auto Scaling Group using Terraform, following IaC best practices (modules, remote state, variables).
