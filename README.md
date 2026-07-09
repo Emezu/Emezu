@@ -56,4 +56,4 @@ Provisioning isolated, secure Hetzner Cloud environments with Terraform, contain
 ---
 
 ## Let's Connect
-📧 emezufabian@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](#) &nbsp;|&nbsp; Open to DevOps / Cloud Engineering roles and collaborations
+📧 emezufabian@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/blessingfabian) &nbsp;|&nbsp; Open to DevOps / Cloud Engineering roles and collaborations
