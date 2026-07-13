@@ -1,5 +1,5 @@
 <h1 align="center"> Hi there, I'm Blessing Fabian </h1>
-<h3 align="center">DevOps Engineer | Cloud Infrastructure, CI/CD, Containerization</h3>
+<h3 align="center"> Linux System Administrator| DevOps Engineer | Cloud Engineer </h3>
 
 <p align="center">
 Lagos, Nigeria 🇳🇬 &nbsp;|&nbsp; emezufabian@gmail.com &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/blessingfabian/">LinkedIn</a>
