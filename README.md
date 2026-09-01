@@ -10,7 +10,7 @@ Lagos, Nigeria 🇳🇬 &nbsp;|&nbsp; emezufabian@gmail.com &nbsp;|&nbsp; <a hre
 I build and operate CI/CD pipelines, containerized workloads, Api gateway configuration and cloud infrastructure for fintech products, currently provisioning and securing the cloud environment for a pre-launch fintech startup from the ground up. I like taking a system from "works on my machine" to "runs reliably in production, with monitoring that tells you before something breaks."
 
 ### Currently
-**Jnr DevOps Engineer @ KoloPay** (June 2026–Present)
+**DevOps Engineer @ Bojeti**
 Provisioning isolated, secure Hetzner Cloud environments with Terraform, containerizing core microservices with Docker/Docker Compose and deploying to Kubernetes, and running Prometheus + Grafana for launch-readiness monitoring. Built GitHub Actions pipelines that cut manual deployment/testing cycles by 70%, and configured Cloudflare DNS routing to isolated services including auth and wallet modules.
 
 ---
